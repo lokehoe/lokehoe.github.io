@@ -1,0 +1,90 @@
+<html>
+<head><title>Register school</title>
+<style>
+table{
+font-family:Times New Roman;
+background-color:lavender;
+font-size:16pt;
+}
+caption{
+text-align:center;
+font-weight:bold;
+font-size:20pt;
+height:50px;
+}
+th,td {
+padding: 15px;
+height: 20%;
+}
+td.title{
+font-weight:bold;
+font-size:large;
+background-color:#lightyellow;
+color:#lemonchiffon;
+}
+</style>
+<link rel="icon" href="SL.png" type="Image">
+</head>
+<body topmargin="50" bgcolor=aqua>
+
+<center>
+<link rel="icon" href="SL.png" type="Image">
+<table><form> <img src="SL.png"height=150 width=150 border=1 alt="school.png" align=center><caption>Register:</caption>
+<tr>
+<td width='40%' class='title'>First Name:</td>
+<td><input type="text name=fname"></td>
+</tr>
+
+<tr>
+<td class='title'>Last Name:</td>
+<td><input type="text name=lname"></td>
+</tr>
+
+<td class='title'>
+IC:
+</td>
+<td>
+<input type=password name=loginpass size=60 minlength=4 maxlenght=4 >
+</td>
+</tr>
+
+<tr>
+<td class='title'>Phone Number:</td>
+<td><input type="text name=number" size=60 ><br><span class="help-block">No special character allowed. eg. (" - "," ")</span></td>
+</tr>
+
+<tr>
+<td class='title'>Gender:</th>
+<td><input type=radio name=gender value=Male>Male
+<input type=radio name=gender value=Female>Female</td>
+</tr>
+
+<tr>
+<td class='title'>Address:</td>
+<td><textarea rows=4 cols=70 name=address></textarea></td>
+</tr>
+
+<tr>
+<td class='title'>Date of birth:</td>
+<td><input type=date name=dob ><br></td>
+</tr>
+
+<tr>
+<td class='title'>
+Email address:
+</td>
+<td>
+<input type=email name=useremail>
+</td>
+</tr>
+
+</table>
+<br><br>
+
+<input type=submit value=Submit>
+<input type=reset value=Reset>
+</td></tr><br><br>
+</form>
+</center>  
+</body>
+</html>
