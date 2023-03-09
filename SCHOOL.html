@@ -1,8 +1,17 @@
 <html lang="en">
 <head>
-<meta charset="UTF-8">
 <meta name="viewport content="width=device-width, initial-scale=1.0">
 <title>Universal Technology University</title>
+<script>
+function biglmg(x)	{
+	x.style.height ="400px";
+	x.style.width = "250px";
+}
+function smalllmg(x)	{
+	x.style.height ="50px";
+	x.style.width = "50px";
+}
+</script>
 <link rel="icon" href="SL.png" type="Image">
 <link rel="stylesheet" href="style of website.css">
 </head>
@@ -11,13 +20,13 @@
 <div class="wrapper">
 <i--NAVIGATION-->
 <nav>
-<img src="SL.png" class="img" alt="logo of school" height=80px>
+<img src="SL.png" class="img" alt="logo of school" height=150px width=300px>
 <ul>
 <li><a href="SCHOOL.html">HOME</a></li>
-<li><a href="About the school.html">ABOUT US</a></li>
-<li><a href="About the couses.html">Programmes</a></li>
-<li><a href="Register.html">Register/Pay</a></li>
-<li><a href="CONTACT.html">CONTACT</a></li>
+<li><a href="About the school.html" target="_blank">ABOUT US</a></li>
+<li><a href="About the couses.html" target="_blank">Programmes</a></li>
+<li><a href="Register.html" target="_blank">Register/Pay</a></li>
+<li><a href="CONTACT.html" target="_blank">CONTACT</a></li>
 </ul>
 </nav>
 <!--END OF NAVIGATION-->
@@ -40,23 +49,23 @@ then take a look at this website, where you can learn about everything, nothing 
 <div id="courses">
 <div class="cs">
 <h3>Computer Science</h3>
-<img src="imagescs.jpg" width="60%" alt="Computer Science">
+<img onmouseover="biglmg(this)" src="imagescs.jpg" width="60%" alt="Computer Science">
 </div>
 <div class="business">
 <h3>Business Studies</h3>
-<img src="imagesbusiness.jpg" width="60%" alt="business">
+<img onmouseover="biglmg(this)"  src="imagesbusiness.jpg" width="60%" alt="business">
 </div>
 <div class="law">
 <h3>Bachelor of Law</h3>
-<img src="imagesLLB.jpg" width="60%" alt="LLB">
+<img img onclick="biglmg(this)"  src="imagesLLB.jpg" width="60%" alt="LLB">
 </div>
 <div class="Airline">
 <h3>Airline Services</h3>
-<img src="imagesAS.jpg" width="60%" alt="AS">
+<img img onclick="biglmg(this)" src="imagesAS.jpg" width="60%" alt="AS">
 </div>
 <div class="Tourism Management">
 <h3>Tourism</h3>
-<img src="imagesT.jpg" width="60%" alt="T">
+<img onmouseout="smalllmg(this)" src="imagesT.jpg" width="60%" alt="T">
 </div>
 </div>
 </showcase>
