@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intelligent Garbage Sorting System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2e7d32;
+      --accent: #a5d6a7;
+      --light: #f9f9f9;
+      --dark: #1b5e20;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--light);
+      color: #333;
+      line-height: 1.6;
+      padding: 0;
+      margin: 0;
+    }
+    header {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 2rem;
+    }
+    header p {
+      font-size: 1.1rem;
+    }
+    section {
+      background: white;
+      margin: 1rem auto;
+      padding: 1.5rem;
+      border-radius: 10px;
+      max-width: 1000px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    section h2 {
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+    ul {
+      margin-left: 1.5rem;
+      margin-top: 0.5rem;
+    }
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+    .highlight {
+      background-color: var(--accent);
+      padding: 0.5rem;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      section {
+        padding: 1rem;
+        margin: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Intelligent Garbage Sorting System</h1>
+    <p>Automated Garbage Management using IoT and Machine Learning</p>
+  </header>
+
+  <section>
+    <h2>🔍 Introduction</h2>
+    <p class="highlight">Automates garbage classification into metal, paper, and plastic using sensors + Arduino.</p>
+    <p>Improves recycling accuracy and reduces human labor in waste management.</p>
+  </section>
+
+  <section>
+    <h2>📌 Problem Statement</h2>
+    <ul>
+      <li class="highlight">Manual sorting is inefficient and error-prone</li>
+      <li>Lack of real-time feedback and high labor costs</li>
+      <li>Inaccurate waste classification slows recycling</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🎯 Objectives</h2>
+    <ul>
+      <li class="highlight">Accurately classify waste as metal, paper, or plastic</li>
+      <li>Reduce manual errors with sensors and automation</li>
+      <li>Provide user feedback through LCD & buzzer</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🧩 System Components</h2>
+    <ul>
+      <li><b>Arduino UNO:</b> Microcontroller hub</li>
+      <li><b>SG90 Servo:</b> Opens bin based on classification</li>
+      <li><b>LCD 1602:</b> Shows identified waste type</li>
+      <li><b>Ultrasonic Sensor:</b> Detects object proximity</li>
+      <li><b>Color Sensor TCS34725:</b> Distinguishes plastic & paper</li>
+      <li><b>Metal Detector LJ12A3-4-Z/BX:</b> Detects metal waste</li>
+      <li><b>Buzzer:</b> Sound notification</li>
+    </ul>
+  </section>
+
+<section>
+  <h2>📷 System Overview</h2>
+ <img src="diagram.png" alt="System Diagram" style="width:50%; border-radius:10px;">
+  <p style="margin-top:1rem;">This diagram illustrates the garbage classification process using sensors and the Arduino controller.</p>
+</section>
+
+  <section>
+    <h2>🛠️ Methodology</h2>
+    <p>System development followed SDLC methodology using C++ in Arduino IDE. Components communicate via I2C protocol. Code leverages libraries like <code>Servo.h</code>, <code>Wire.h</code> and <code>TCS3200.h</code>.</p>
+  </section>
+
+  <section>
+    <h2>📊 Results</h2>
+    <ul>
+      <li><span class="highlight">Classification Accuracy: 95.31%</span></li>
+      <li>SUS Score: 86%</li>
+      <li>Lighting conditions affect color sensor performance</li>
+      <li>Reset function allows correction of misclassifications</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🚀 Conclusion & Future Work</h2>
+    <ul>
+      <li><b>Effective</b> for small-scale indoor use</li>
+      <li>Future: Classify more waste types (organic, hazardous)</li>
+      <li>Include self-cleaning, solar power, cloud monitoring</li>
+    </ul>
+  </section>
+</body>
+</html>
